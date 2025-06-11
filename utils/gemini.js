@@ -1,7 +1,8 @@
 const axios = require('axios');
 require('dotenv').config();
 
-const GEMINI_API_KEY = "AIzaSyDLDoPNr3ObZvvR0Wd2pP1HgKVaekAs4sQ";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
 
 async function chat(prompt) {
   const body = {
